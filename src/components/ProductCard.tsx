@@ -48,6 +48,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           src={product.image}
           alt={product.name}
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.dataset.fallback) {
+              target.dataset.fallback = 'true';
+              target.src = '/assets/images/product_phone_case_1794491769873.jpg';
+            }
+          }}
           className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
         />
 

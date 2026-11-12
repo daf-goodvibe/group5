@@ -84,6 +84,13 @@ export const Hero: React.FC<HeroProps> = ({
                 src={heroGearImg}
                 alt="Kinetiq Active Lifestyle Accessories - Impact Phone Case with Sports Arm Strap and Insulated Bottle in Sage"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.fallback) {
+                    target.dataset.fallback = 'true';
+                    target.src = '/assets/images/hero_active_gear_1794491770778.jpg';
+                  }
+                }}
                 className="w-full h-auto object-cover aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] transform transition-transform duration-700 group-hover:scale-[1.02]"
               />
 

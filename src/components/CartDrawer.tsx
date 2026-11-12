@@ -116,6 +116,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     src={item.image}
                     alt={item.name}
                     referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (!target.dataset.fallback) {
+                        target.dataset.fallback = 'true';
+                        target.src = '/assets/images/product_phone_case_1794491769873.jpg';
+                      }
+                    }}
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
