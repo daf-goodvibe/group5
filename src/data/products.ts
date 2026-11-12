@@ -1,4 +1,7 @@
 import { Product, ProductColor } from '../types';
+import phoneCaseImg from '../assets/images/product_phone_case_1794491769873.jpg';
+import waterBottleImg from '../assets/images/product_water_bottle_1794491770312.jpg';
+import laptopLunchboxImg from '../assets/images/product_laptop_lunchbox_1794491771500.jpg';
 
 export const COLOR_PALETTE: ProductColor[] = [
   { id: 'sage', name: 'Pastel Sage', hex: '#94A694', secondaryHex: '#7C8E7C' },
@@ -20,7 +23,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 58,
     rating: 4.9,
     reviewCount: 1420,
-    image: '/src/assets/images/product_phone_case_1794491769873.jpg',
+    image: phoneCaseImg,
     badge: 'Bestseller',
     description: 'Engineered with military-spec EcoShock™ air-cushioned corners and MagSafe ultra-lock. Tested to survive 12.8ft drops onto asphalt without screen compromise.',
     highlightSpecs: [
@@ -58,7 +61,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 48,
     rating: 4.95,
     reviewCount: 980,
-    image: '/src/assets/images/product_water_bottle_1794491770312.jpg',
+    image: waterBottleImg,
     badge: 'Montigo-Grade Insulation',
     description: 'Double-walled aerospace stainless steel with interchangeable shockproof silicone boot. Keeps iced drinks cold for 24 hours and steaming hot for 12 hours with zero condensation.',
     highlightSpecs: [
@@ -91,7 +94,7 @@ export const PRODUCTS: Product[] = [
     price: 34,
     rating: 4.88,
     reviewCount: 740,
-    image: '/src/assets/images/product_phone_case_1794491769873.jpg',
+    image: phoneCaseImg,
     badge: 'Runner Essential',
     description: 'Sweat-wicking breathable neoprene sports arm strap with tactical quick-release alloy carabiners. Converts seamlessly from an arm holster into a crossbody utility chest sling.',
     highlightSpecs: [
@@ -124,7 +127,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 65,
     rating: 4.85,
     reviewCount: 620,
-    image: '/src/assets/images/product_laptop_lunchbox_1794491771500.jpg',
+    image: laptopLunchboxImg,
     badge: 'Campus Favorite',
     description: 'Precision-molded polycarbonate protective hard casing with perimeter TPU honeycomb bumpers. Features ventilated cooling grates and rubberized non-slip feet.',
     highlightSpecs: [
@@ -159,7 +162,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 45,
     rating: 4.92,
     reviewCount: 510,
-    image: '/src/assets/images/product_laptop_lunchbox_1794491771500.jpg',
+    image: laptopLunchboxImg,
     badge: 'Leak-Proof Seal',
     description: 'Stackable 2-tier meal container with airtight silicone vacuum pressure valve. Includes food-grade stainless steel divider compartments and matching cutlery strap.',
     highlightSpecs: [
@@ -191,7 +194,7 @@ export const PRODUCTS: Product[] = [
     price: 26,
     rating: 4.89,
     reviewCount: 430,
-    image: '/src/assets/images/product_phone_case_1794491769873.jpg',
+    image: phoneCaseImg,
     badge: 'Pocket Armor',
     description: 'Tough hardshell cover with magnetic locking latch to prevent pods from scattering on drop impact. Includes anodized clip for gym bags, belts, and backpacks.',
     highlightSpecs: [

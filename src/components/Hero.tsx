@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, Sparkles, Layers, RefreshCw } from 'lucide-react';
+import heroGearImg from '../assets/images/hero_active_gear_1794491770778.jpg';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -25,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-zinc-950 font-['Outfit',sans-serif] tracking-tight leading-[1.08] text-balance">
-              Wholistic protection in style for all your daily carry.
+              Holistic protection in style for all your daily carry.
             </h1>
 
             <p className="text-base sm:text-lg text-zinc-600 font-normal leading-relaxed max-w-xl">
@@ -80,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden bg-zinc-100 border border-zinc-200/80 shadow-md group">
               <img
-                src="/src/assets/images/hero_active_gear_1794491770778.jpg"
+                src={heroGearImg}
                 alt="Kinetiq Active Lifestyle Accessories - Impact Phone Case with Sports Arm Strap and Insulated Bottle in Sage"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-cover aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] transform transition-transform duration-700 group-hover:scale-[1.02]"

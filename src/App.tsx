@@ -18,7 +18,18 @@ export default function App() {
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
       const saved = localStorage.getItem('kinetiq_cart');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          return parsed.map((item: CartItem) => {
+            if (item?.image && typeof item.image === 'string' && item.image.startsWith('/src/')) {
+              const matched = PRODUCTS.find((p) => p.id === item.productId);
+              if (matched) return { ...item, image: matched.image };
+            }
+            return item;
+          });
+        }
+      }
     } catch {
       // fallback
     }

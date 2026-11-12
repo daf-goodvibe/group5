@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Sparkles, Check, RotateCcw, ShieldCheck, Heart } from 'lucide-react';
 import { COLOR_PALETTE } from '../data/products';
 import { ProductColor, CartItem } from '../types';
+import phoneCaseImg from '../assets/images/product_phone_case_1794491769873.jpg';
+import waterBottleImg from '../assets/images/product_water_bottle_1794491770312.jpg';
+import laptopLunchboxImg from '../assets/images/product_laptop_lunchbox_1794491771500.jpg';
 
 interface CustomizerStudioProps {
   onAddToCart: (item: CartItem) => void;
@@ -55,12 +58,12 @@ export const CustomizerStudio: React.FC<CustomizerStudioProps> = ({ onAddToCart 
       selectedModel: model,
       image:
         productType === 'phone-case'
-          ? '/src/assets/images/product_phone_case_1794491769873.jpg'
+          ? phoneCaseImg
           : productType === 'water-bottle'
-          ? '/src/assets/images/product_water_bottle_1794491770312.jpg'
+          ? waterBottleImg
           : productType === 'laptop-case' || productType === 'lunch-box'
-          ? '/src/assets/images/product_laptop_lunchbox_1794491771500.jpg'
-          : '/src/assets/images/product_phone_case_1794491769873.jpg',
+          ? laptopLunchboxImg
+          : phoneCaseImg,
       customization: {
         monogramText: monogramText.trim() || 'CUSTOM',
         fontStyle,
