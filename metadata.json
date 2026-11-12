@@ -1,0 +1,6 @@
+{
+  "name": "KINETIQ | Active Lifestyle Protection & Gear",
+  "description": "Customizable high-protection phone cases, runner arm straps, laptop shock casings, vacuum-insulated bottles, and modular lunch boxes. Uniquely designed by you.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
